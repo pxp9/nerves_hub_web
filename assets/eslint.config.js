@@ -13,9 +13,13 @@ export default [
       globals: {
         ...globals.browser,
         ...globals.jest,
-        Intl: true
+        Intl: true,
+        liveSocket: "readonly",
+        geocoder: "readonly",
+        geolocate: "readonly",
+        dates: "readonly"
       },
-      ecmaVersion: 6,
+      ecmaVersion: "latest",
       sourceType: "module"
     },
     rules: {
